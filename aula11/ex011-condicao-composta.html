@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Identificador de Nacionalidade</h1>
+    <p>Digite o nome do país em que você nasceu.</p>
+    <input type="text" name="país" id="país">
+    <p>Clique para saber se você é Brasileiro ou Estrangeiro.</p>
+    <input type="button" value="Descubra" onclick="identificar()">
+    <p>Resultado:</p>
+    <div id="res"></div>
+
+    <script>
+        function identificar() {
+            var país = document.getElementById('país').value
+            var txtRes = document.getElementById('res')
+            
+            if (país == 'Brasil') {
+                txtRes.innerHTML = `Seu país de origem é ${país}. Você é Brasileiro.`
+            } else {
+                txtRes.innerHTML = `Seu país de origem é ${país}. Você é Estrangeiro.`
+            }
+
+        }
+    </script>
+
+</body>
+</html>
