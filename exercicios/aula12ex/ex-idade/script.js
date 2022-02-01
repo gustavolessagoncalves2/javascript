@@ -3,13 +3,12 @@ let campoVerificar = document.getElementById('inputVerificar')
 campoVerificar.addEventListener('click', verificar)
 
 let campoAnoDeNascimento = document.getElementById('inputAnoDeNascimento')
+let anoDeNascimento = parseInt(campoAnoDeNascimento.value)
 
-let campoSexoMasculino = document.getElementById('checkboxMasculino').value
-
-let campoSexoFeminino = document.getElementById('checkboxFeminino').value
+//let sexo = document.querySelectorAll('input[name="sexo"]')
 
 
-let sexo = document.getElementById('formSexo').value
+
 
 
 //comparando os dados e mostrando resultados
@@ -18,13 +17,10 @@ let sexo = document.getElementById('formSexo').value
 
 
 
-
-
-
-
 function verificar() {
 
-console.log(sexo)
+console.log(campoAnoDeNascimento)
+
 
 }
 
