@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Idade</title>
+    <title>Verificador de Idade</title>
 </head>
 <body>
     <header>
@@ -13,12 +13,13 @@
     </header>
     <section>
         <div>
-            Ano de Nascimento: <input type="number" name="inputAnoDeNascimento" id="inputAnoDeNascimento">
+            Ano de Nascimento: 
+            <input type="number" name="inputAnoDeNascimento" id="inputAnoDeNascimento">
         </div>
 
         <div>
             Sexo:
-            <input type="radio" name="sexo" id="radioMasculino" value="Sexo Masculino">
+            <input type="radio" name="sexo" id="radioMasculino" value="Sexo Masculino" checked>
             <label for="radioMasculino">Masculino</label>
 
             <input type="radio" name="sexo" id="radioFeminino" value="Sexo Feminino">
@@ -26,11 +27,14 @@
         </div>
 
         <div>
-            <input type="button" value="Verificar" id="inputVerificar">
+            <input type="button" value="Verificar" id="inputVerificar" onclick="verificar()">
         </div>
 
-        <div id="resultado">
-
+        <div id="res">
+            Preencha os dados acima para ver o resultado
+        </div>
+        <div id="res-img">
+            Imagem aqui
         </div>
     </section>
     <footer>
