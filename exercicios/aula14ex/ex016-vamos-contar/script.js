@@ -2,20 +2,36 @@ var buttonContar = document.querySelector("input#btContar")
 buttonContar.addEventListener('click', contar)
 
 function contar() {
-    var inicio = Number(document.querySelector("input#inicio").value)
 
-    var fim = Number(document.querySelector("input#fim").value)
-
-    var passo = Number(document.querySelector("input#passo").value)
-
+    var inicio = document.querySelector("input#inicio").value
+    
+    var fim = document.querySelector("input#fim").value
+    
+    var passo = document.querySelector("input#passo").value
+    
     var txtRes = document.querySelector("div#res")
 
-    //window.alert(passo)
+    if (inicio == null) {
+        alert("Preencha todos os campos")
+    } else {
+        
+        /*
+        for (num = inicio; num <= fim ; num = num + passo) {
+            num = num + num
 
-    for (num = inicio; num <= fim ; num = num + passo) {
-        txtRes.innerHTML = `${num} &#128073;`        
+            //criar span
+        }
+        */
+        alert(inicio)
+        alert(fim)
+        alert(passo)
     }
+    
 }
+
+
+
+
 
 
 
