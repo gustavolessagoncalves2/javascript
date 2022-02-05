@@ -1,13 +1,21 @@
-
 var buttonContar = document.querySelector("input#btContar")
 buttonContar.addEventListener('click', contar)
 
 function contar() {
-    var inicio = parteInt(document.querySelector("input#inicio").value)
+    var inicio = Number(document.querySelector("input#inicio").value)
 
-    var fim = parteInt(document.getElementById("fim"))
+    var fim = Number(document.querySelector("input#fim").value)
 
-    var soma = inicio + fim
+    var passo = Number(document.querySelector("input#passo").value)
 
-    windw.alert(soma)
+    var txtRes = document.querySelector("div#res")
+
+    //window.alert(passo)
+
+    for (num = inicio; num <= fim ; num = num + passo) {
+        txtRes.innerHTML = `${num} &#128073;`        
+    }
 }
+
+
+
