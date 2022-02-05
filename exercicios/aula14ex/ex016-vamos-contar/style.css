@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(156, 224, 136);
+    background-color: rgb(109, 196, 211);
     font: normal 16px Arial;
 }
 
@@ -15,9 +15,16 @@ section {
     border-radius: 8px;
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.349);
     max-width: 500px;
-    padding: 20px 20px;
     margin-right: auto;
     margin-left: auto;
+}
+
+div {
+    padding: 20px 20px 0px 20px;
+}
+
+div#res {
+padding-bottom: 20px;
 }
 
 footer {
