@@ -3,28 +3,25 @@ buttonContar.addEventListener('click', contar)
 
 function contar() {
 
-    var inicio = document.querySelector("input#inicio").value
+    var inicio = parseInt(document.querySelector("input#inicio").value)
     
-    var fim = document.querySelector("input#fim").value
+    var fim = parseInt(document.querySelector("input#fim").value)
     
-    var passo = document.querySelector("input#passo").value
+    var passo = parseInt(document.querySelector("input#passo").value)
     
     var txtRes = document.querySelector("div#res")
 
-    if (inicio == null) {
+    if (inicio == "") {
         alert("Preencha todos os campos")
+    } else if (passo == 0) {
+        alert("Passo = 0 é invalido. Considerando Passo = 1")
+        passo = 1
     } else {
-        
-        /*
+        txtRes.innerHTML = `Contagem: <br>`
         for (num = inicio; num <= fim ; num = num + passo) {
-            num = num + num
-
-            //criar span
+            txtRes.innerHTML += `${num} &#x1F449;`
         }
-        */
-        alert(inicio)
-        alert(fim)
-        alert(passo)
+        txtRes.innerHTML += `&#x1F3C1;`
     }
     
 }
