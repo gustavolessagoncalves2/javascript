@@ -11,15 +11,13 @@ function gerarTabuada() {
     if (txtNum.value.length == 0) {
         alert("insira um número")
     } else {
-    
+
+        txtTab.innerHTML = ""
         for (multiplicando = 0; multiplicando <= 10; multiplicando++) {
             
             var produto = num * multiplicando
 
             txtTab.innerHTML += `<option value="${produto}">${num} x ${multiplicando} = ${produto} </option>`
-            
-            txtTab.setAttribute("size", `${multiplicando + 1}`)
         }
-    
     }
 }
