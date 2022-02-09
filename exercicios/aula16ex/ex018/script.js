@@ -49,9 +49,24 @@ function finalizar() {
         alert("Por favor, insira mais de 1 número antes finalizar a análise.")
 
     } else {
+        //Maior valor
+        aNumber.sort()
+        alert(aNumber)
+
+        var maiorValor = aNumber[aNumber.length - 1]
+
+        //Menor valor
+
+        
+        //Soma dos valores
+
+
+        //Média dos valores
+
+
         //Mostrando na tela a análise dos números
         txtRes.innerHTML = `<p>Ao todo, temos ${aNumber.length} números cadastrados.</p>
-        <p>O maior valor informado foi ${aNumber.length}.</p>
+        <p>O maior valor informado foi ${maiorValor}.</p>
         <p>O menor valor informado foi ${aNumber.length}.</p>
         <p>Somando todos os valores, temos o total ${aNumber.length}.</p>
         <p>A média dos valores informados é ${aNumber.length}.</p>`
