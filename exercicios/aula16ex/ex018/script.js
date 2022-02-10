@@ -21,13 +21,8 @@ function adicionar() {
     } else if (aNumber.includes(number) == true) {
         //Condicional para valor já adicionado no array aNumber
         alert("Valor já adicionado. Por favor, insira outro número.") 
-        //esvaziar input
-        txtNumber.value = ''
 
     } else {
-        //esvaziar input
-        txtNumber.value = ''
-
         //Pegando e esvaziando o campo de resultado
         txtRes = document.querySelector('div#analise')
         txtRes.innerHTML = ''
@@ -41,6 +36,9 @@ function adicionar() {
         option.value = `n${number}`
         txtTab.appendChild(option)
     }
+    //Esvaziando input e colocando o foco de volta nele
+    txtNumber.value = ''
+    txtNumber.focus()
 }
 
 function finalizar() {
@@ -79,7 +77,6 @@ function finalizar() {
         <li>O menor valor adicionado foi ${menorValor}.</li>
         <li>A soma dos valores adicionados é ${somaValores}.</li>
         <li>A média dos valores adicionados é ${mediaValores}.</li>
-        </ul>
-        `
+        </ul>`
     }
 }
