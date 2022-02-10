@@ -68,8 +68,8 @@ function finalizar() {
         var mediaValores = somaValores/aNumber.length
 
         //Mostrando na tela a análise dos números
-        txtRes.innerHTML = `
-        <ul>
+        txtRes.innerHTML = 
+        `<ul>
         <li>${aNumber.length} números cadastrados.</li>
         <li>O maior valor informado foi ${maiorValor}.</li>
         <li>O menor valor informado foi ${menorValor}.</li>
