@@ -28,6 +28,10 @@ function adicionar() {
         //esvaziar input
         txtNumber.value = ''
 
+        //Pegando e esvaziando o campo de resultado
+        txtRes = document.querySelector('div#analise')
+        txtRes.innerHTML = ''
+
         //Adicionando os valores ao array aNumber
         aNumber.push(number)
 
@@ -70,11 +74,11 @@ function finalizar() {
         //Mostrando na tela a análise dos números
         txtRes.innerHTML = 
         `<ul>
-        <li>${aNumber.length} números cadastrados.</li>
-        <li>O maior valor informado foi ${maiorValor}.</li>
-        <li>O menor valor informado foi ${menorValor}.</li>
-        <li>Somando todos os valores, temos o total ${somaValores}.</li>
-        <li>A média dos valores informados é ${mediaValores}.</li>
+        <li>${aNumber.length} números foram adicionados.</li>
+        <li>O maior valor adicionado foi ${maiorValor}.</li>
+        <li>O menor valor adicionado foi ${menorValor}.</li>
+        <li>A soma dos valores adicionados é ${somaValores}.</li>
+        <li>A média dos valores adicionados é ${mediaValores}.</li>
         </ul>
         `
     }
