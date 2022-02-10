@@ -51,7 +51,6 @@ function finalizar() {
     } else {
         //Classificando em ordem crescente
         aNumber.sort(function(a, b){return a - b})
-        alert(aNumber)
 
         //Maior valor
         let maiorValor = aNumber[aNumber.length - 1]
@@ -67,13 +66,16 @@ function finalizar() {
 
         //Média dos valores
         var mediaValores = somaValores/aNumber.length
-        alert(mediaValores)
 
         //Mostrando na tela a análise dos números
-        txtRes.innerHTML = `<p>Ao todo, temos ${aNumber.length} números cadastrados.</p>
-        <p>O maior valor informado foi ${maiorValor}.</p>
-        <p>O menor valor informado foi ${menorValor}.</p>
-        <p>Somando todos os valores, temos o total ${somaValores}.</p>
-        <p>A média dos valores informados é ${mediaValores}.</p>`
+        txtRes.innerHTML = `
+        <ul>
+        <li>${aNumber.length} números cadastrados.</li>
+        <li>O maior valor informado foi ${maiorValor}.</li>
+        <li>O menor valor informado foi ${menorValor}.</li>
+        <li>Somando todos os valores, temos o total ${somaValores}.</li>
+        <li>A média dos valores informados é ${mediaValores}.</li>
+        </ul>
+        `
     }
 }
